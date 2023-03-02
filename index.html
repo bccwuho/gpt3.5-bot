@@ -17,51 +17,41 @@
           padding: 15px;
         }
         </style>
-        <title>GPT-Trainer</title>
+        <title>GPT3.5-Bot</title>
         <link rel="icon" type="image/png" href="favicon.ico">
 </head>
 
 <body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
     <script src="./frontend.js"></script>
-    <h1>Train GPT-3</h1>
+    <h1>GPT-3.5 BOT</h1>
     <input type="button" value="SAVE" onclick="save()">
     <input type="button" value="RESTORE" onclick="restore()">
-    <input type="button" value="Convert" onclick="convert()">
+    <!-- <input type="button" value="Convert" onclick="convert()"> -->
     <input type="button" value="Refresh" onclick="refresh()">
-    <p><label for="suffix">Fine-Tune Name: </label> <input type="text" id="suffix"></input></p>
-    <input type="button" value="Upload" onclick="upload()">
+    <!-- <p><label for="suffix">Fine-Tune Name: </label> <input type="text" id="suffix"></input></p>
+    <input type="button" value="Upload" onclick="upload()"> -->
     <p id="save_status"></p>
 
-    <p><label for="sumary">Summary: </label> <text id="summary_index"></text></p>
-    <textarea id="sumary" name="sumary" rows="8" cols="105" placeholder="Add Summary here..."></textarea>
+    <p><label for="system">System: </label></p>
+    <textarea id="system" name="sumary" rows="8" cols="105" placeholder="Add Summary here..."></textarea>
     <br>
-    <input type="button" value="Submit Summary" onclick="submitSummary()">
-    <input type="button" value="Update" onclick="updateSummary()">
-
+    <input type="button" value="Submit Summary" onclick="submitSystem()">
 
     <table>
         <tr>
-            <td colspan="2">
-                <p><label for="instruction">Instructions:</label> <text id="detail_index"></text> </p>
-                <textarea id="instruction" name="instruction" rows="4" cols="105"
-                    placeholder="Add Instructions here...">None</textarea>
-            </td>
-        </tr>
-        <tr>
-            <td>
+            <td style="width: 50%">
                 <p><label for="prompt">Prompt:</label></p>
-                <textarea id="prompt" name="prompt" rows="4" cols="50" placeholder="Prompt here..."></textarea>
+                <textarea id="prompt" name="prompt" rows="4" cols="100" placeholder="Prompt here..."></textarea>
+                <input type="button" value="Submit" onclick="submitPrompt()">
             </td>
             <td>
                 <p><label for="completion">Completions:</label></p>
-                <textarea id="completion" name="completion" rows="4" cols="50"
-                    placeholder="Completions here..."></textarea>
+                <div id="completion">Completions here...</div>
             </td>
         </tr>
     </table>
     <br>
-    <input type="button" value="Submit Details" onclick="submitDetails()">
     <input type="button" value="Update" onclick="updateDetails()">
 
     <div id="table"></div>

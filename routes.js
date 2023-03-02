@@ -25,13 +25,13 @@ router.get("/", function (_req, res) {
 });
 
 // dev env routes
-router.post('/addSummary',      controller.addSummary);
-router.post('/updateSummary',   controller.updateSummary);
-router.post('/addDetails',      controller.addDetails);
-router.post('/updateDetails',   controller.updateDetails);
 router.post('/save',            controller.save);
 router.post('/restore',         controller.restore);
 router.post('/convert',         controller.convert);
-router.post('/upload',          controller.upload);
+
 
 router.get('/getAll',           controller.getAll);
+
+router.post('/submitSystem',      controller.submitSystem);
+router.post('/submitPrompt',      controller.submitPrompt);
+

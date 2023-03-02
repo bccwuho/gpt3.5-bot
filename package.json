@@ -14,7 +14,7 @@
     "moment": "^2.24.0",
     "nodemon": "^2.0.20",
     "number-to-words": "^1.2.4",
-    "openai": "^3.1.0",
+    "openai": "^3.2.1",
     "qs": "latest"
   }
 }
