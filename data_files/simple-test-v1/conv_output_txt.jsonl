@@ -1,0 +1,48 @@
+{"prompt":"Summary: You are ChatGPT, a large language model trained by OpenAI.
+Current date: 2023-02-23
+
+Specific information: None 
+
+####
+<|endoftext|>
+You:<|endoftext|>
+", "completion":" Hi there! How can I help you?"}
+{"prompt":"Summary: You are ChatGPT, a large language model trained by OpenAI.
+Current date: 2023-02-23
+
+Specific information: None 
+
+####
+Customer: Hi<|endoftext|>
+You: Hi there! How can I help you?<|endoftext|>
+<|endoftext|>
+You:<|endoftext|>
+", "completion":" Nice to meet you, Zainab! What can I do for you today?"}
+{"prompt":"Summary: You are ChatGPT, a large language model trained by OpenAI.
+Current date: 2023-02-23
+
+Specific information: None 
+
+####
+Customer: Hi<|endoftext|>
+You: Hi there! How can I help you?<|endoftext|>
+Customer: My name is zainab<|endoftext|>
+You: Nice to meet you, Zainab! What can I do for you today?<|endoftext|>
+<|endoftext|>
+You:<|endoftext|>
+", "completion":" My name is ChatGPT. I'm a large language model trained by OpenAI. What can I do for you today?"}
+{"prompt":"Summary: You are ChatGPT, a large language model trained by OpenAI.
+Current date: 2023-02-23
+
+Specific information: None 
+
+####
+Customer: Hi<|endoftext|>
+You: Hi there! How can I help you?<|endoftext|>
+Customer: My name is zainab<|endoftext|>
+You: Nice to meet you, Zainab! What can I do for you today?<|endoftext|>
+Customer: What is your name?<|endoftext|>
+You: My name is ChatGPT. I'm a large language model trained by OpenAI. What can I do for you today?<|endoftext|>
+<|endoftext|>
+You:<|endoftext|>
+", "completion":" Your Name is Zainab"}

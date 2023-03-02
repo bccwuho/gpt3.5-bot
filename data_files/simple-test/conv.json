@@ -1,0 +1,31 @@
+{
+    "prompt": "Summary: <summary of the interaction so far>
+    
+    Specific information:<for example order details in natural language>
+    
+    ###\n\nCustomer: <message1>
+    Agent: <response1>
+    Customer: <message2>
+    Agent:",
+    "completion": " <response2>
+    "
+}
+
+
+
+{
+    "prompt": "Summary: <summary of the interaction so far>\n\n
+    
+    Specific information:<for example order details in natural language>\n\n
+    
+    ###\n\n
+    
+    Customer: <message1>\n
+    Agent: <response1>\n
+    Customer: <message2>\n
+    Agent: <response2>\n
+    Customer: <message3>\n
+    Agent: -->",
+    "completion": " <response3>\n
+    "
+}
