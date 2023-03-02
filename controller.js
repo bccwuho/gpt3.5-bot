@@ -38,13 +38,24 @@ exports.submitPrompt = async function (req, res, _next) {
 	console.log("...............................");
 
 	let prompt = req.body.prompt;
+	let completion = '';
+
 	console.log("prompt: " + prompt);
 
 	MESSAGES.push({ role: "user", content: prompt });
-	MESSAGES.push({ role: "assistant", content: prompt });
-	console.log("DATA", MESSAGES);
 
-	res.send({ status: "success", completion: prompt });
+	(async () => {
+		const response = await openai.createChatCompletion({
+			model: "gpt-3.5-turbo",
+			messages: MESSAGES
+		  });
+		console.log(response);
+		console.log("choices:", JSON.stringify(response.data.choices));
+		completion=response.data.choices[0].message.content;
+		MESSAGES.push({ role: "assistant", content:  completion});
+		console.log("DATA", MESSAGES);
+		res.send({ status: "success", completion: completion });
+	})();
 }
 
 exports.getAll = async function (req, res, _next) {
